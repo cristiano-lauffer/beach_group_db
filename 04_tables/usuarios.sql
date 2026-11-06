@@ -7,6 +7,7 @@ create table `beach_group`.`usuarios` (
 	`senha` VARCHAR(500) not null ,
 	`dat_criacao` DATETIME not null DEFAULT CURRENT_TIMESTAMP,
 	`dat_alteracao` DATETIME null,
+	`flg_admin` varchar(100) NULL,
 	primary key (`oid_usuario`)
 )
 -- engine = InnoDB
